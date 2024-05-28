@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={{ height: "100%", overflow: "hidden" }}>
-      <body style={{ height: "calc(100vh - 12rem - 4px)", margin: 0 }}>
+      <body style={{ height: "calc(100vh - 6rem - 4px)", margin: 0 }}>
         <header
           style={{
             backgroundColor: "ghostwhite",

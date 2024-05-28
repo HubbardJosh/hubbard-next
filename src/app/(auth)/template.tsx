@@ -3,7 +3,7 @@
 import { NavRoute } from "@/components/navbar/navbar";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 
 const navLinks: NavRoute[] = [
   { label: "Register", href: "/register" },
@@ -13,9 +13,18 @@ const navLinks: NavRoute[] = [
 
 export default function AuthLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname(); // needs to be a client component to use this
+  const [input, setInput] = useState("");
 
   return (
     <div>
+      <div>
+        <input
+          className="border"
+          type="text"
+          value={input}
+          onChange={(val) => setInput(val.target.value)}
+        />
+      </div>
       {navLinks.map((link) => {
         const isActive = pathname.startsWith(link.href);
 
