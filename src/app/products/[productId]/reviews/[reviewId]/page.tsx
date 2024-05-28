@@ -1,3 +1,11 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Review", // sets title to this value, ignoring all other templates
+  },
+};
+
 import { notFound } from "next/navigation";
 
 export default function ReviewDetail({
