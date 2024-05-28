@@ -1,11 +1,6 @@
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
+"use client";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Review", // sets title to this value, ignoring all other templates
-  },
-};
+import { notFound } from "next/navigation";
 
 function getRandomInt(count: number) {
   return Math.floor(Math.random() * count);

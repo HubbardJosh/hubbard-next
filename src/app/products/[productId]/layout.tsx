@@ -9,7 +9,6 @@ export default function ProductDetailsLayout({
     <>
       {children}
       <h2>Features products</h2>
-      {/* Carousel here */}
     </>
   );
 }
